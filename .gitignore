@@ -1,0 +1,71 @@
+###########################################
+# Maven / Spring Boot
+###########################################
+target/
+*.jar
+*.war
+*.ear
+
+# Maven Wrapper (si pas utilisé)
+.mvn/wrapper/maven-wrapper.jar
+.mvn/
+mvnw
+mvnw.cmd
+
+# Ne pas ignorer les dossiers target dans src/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+###########################################
+# Logs
+###########################################
+*.log
+
+###########################################
+# IDE / Editors
+###########################################
+
+# STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+
+###########################################
+# OS / System
+###########################################
+.DS_Store
+Thumbs.db
+
+###########################################
+# Docker
+###########################################
+*.tar
+*.pid
+
+###########################################
+# Kubernetes
+###########################################
