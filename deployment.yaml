@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kub-exemple-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kub-exemple
+  template:
+    metadata:
+      labels:
+        app: kub-exemple
+    spec:
+      containers:
+      - name: kub-exemple
+        image: kub-exemple:1.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8081
